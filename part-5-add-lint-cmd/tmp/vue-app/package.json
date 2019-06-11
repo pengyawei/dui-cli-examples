@@ -1,0 +1,28 @@
+{
+  "name": "dui-vue-app-template",
+  "main": "index.js",
+  "author": "yamcer",
+  "license": "ISC",
+  "version": "1.0.0",
+  "keywords": "",
+  "description": "",
+  "duiConfigs": {
+    "type": "vue-app",
+    "name": "dui project",
+    "title": "dui project",
+    "devServer": {
+      "host": "localhost",
+      "port": 5599,
+      "proxy": {
+        "/api": {
+          "secure": false,
+          "target": "http://localhost:3000",
+          "changeOrigin": true,
+          "pathRewrite": {
+            "^/api": "/status?code=404"
+          }
+        }
+      }
+    }
+  }
+}

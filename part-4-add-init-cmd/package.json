@@ -1,0 +1,13 @@
+{
+  "name": "dui-cli",
+  "version": "1.0.0",
+  "bin": {
+    "dui": "bin/dui.js"
+  },
+  "dependencies": {
+    "commander": "^2.20.0",
+    "dui-console": "^1.0.2",
+    "fs-extra": "^8.0.1",
+    "inquirer": "^6.3.1"
+  }
+}
